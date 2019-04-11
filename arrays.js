@@ -53,5 +53,6 @@ function destructivelyRemoveElementFromEndOfArray(){
 
 function removeElementFromEndOfArray(){
   var myArray = [1,2,3]
- var newMyArray.pop()
- return myArray
+ var newMyArray= myArray.pop()
+ return newMyArray
+}

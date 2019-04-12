@@ -22,8 +22,8 @@ function addElementToEndOfArray( ){
 
 function destructivelyAddElementToEndOfArray(){
   var myArray = [1];
-  myArrayOne.push("foo")
-  return myArrayOne
+ myArray.push("foo")
+ return myArray
 }
 
 function accessElementInArray(){

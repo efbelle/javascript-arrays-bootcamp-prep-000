@@ -40,8 +40,7 @@ myArray.shift()
 
 function removeElementFromBeginningOfArray(){
   var myArray = [1,2,3]
-  myArray.slice(1)
-  return myArray
+  return  myArray.slice(1)
 }
 
 function destructivelyRemoveElementFromEndOfArray(){

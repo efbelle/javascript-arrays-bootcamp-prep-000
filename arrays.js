@@ -1,55 +1,41 @@
-var chocolateBars = ["snickers", "hundred grand", "kitkat", "skittles"];
+var chocolateBars = ["snickers", "hundred grand", "kitkat", "skittles"]
 
-function addElementToBeginningOfArray( ){
-  var myArray = [1];
-  const myElement= "foo"
-  var newMyArray= ["foo",...myArray]
-  return newMyArray
+function addElementToBeginningOfArray(array, element) {
+  return [element, ...array]
 }
 
-function destructivelyAddElementToBeginningOfArray(){
- var myArray = [1];
-  myArray.unshift("foo")
-  return myArray
+function destructivelyAddElementToBeginningOfArray(array, element) {
+  array.unshift(element)
+  return array
 }
 
-function addElementToEndOfArray( ){
-  var myArray = [1];
-  const myElement= "foo"
-  myArray.push(myElement)
-  return myArray
+function addElementToEndOfArray(array, element) {
+  return [...array, element]
 }
 
-function destructivelyAddElementToEndOfArray(){
-  var myArray = [1];
- myArray.push("foo")
- return myArray
+function destructivelyAddElementToEndOfArray(array, element) {
+  array.push(element)
+  return array
 }
 
-function accessElementInArray(){
-  var myArray = [3];
-  return myArray[0]
+function destructivelyRemoveElementFromBeginningOfArray(array) {
+  array.shift()
+  array
 }
 
-function destructivelyRemoveElementFromBeginningOfArray(){
-var myArray = [1,2,3];
-myArray.shift()
- return myArray
+function removeElementFromBeginningOfArray(array) {
+  return array.slice(1)
 }
 
-function removeElementFromBeginningOfArray(){
-  var myArray = [1,2,3]
-  return  myArray.slice(1)
+function destructivelyRemoveElementFromEndOfArray(array) {
+  array.pop()
+  return array
 }
 
-function destructivelyRemoveElementFromEndOfArray(){
-  var myArray = [1,2,3]
- myArray.pop()
- return myArray
+function removeElementFromEndOfArray(array) {
+  return array.slice(0, array.length - 1)
 }
 
-function removeElementFromEndOfArray(){
-  var myArray = [1,2,3]
-  newMyArray = myArray.slice(0,myArray.length-1)
- return newMyArray
+function accessElementInArray(array, index) {
+  return array[index]
 }

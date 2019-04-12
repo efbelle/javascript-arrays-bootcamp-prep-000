@@ -21,7 +21,7 @@ function addElementToEndOfArray( ){
 }
 
 function destructivelyAddElementToEndOfArray(){
-  var myArrayOne = [1];
+  var myArray = [1];
   const myElementOne= "foo"
   myArrayOne.push(myElementOne)
   return myArrayOne
